@@ -45,7 +45,7 @@ const LoginPage: React.FC = () => {
             colorScheme = "teal" 
             width = "full"
             variant="solid"
-            onClick={() => googleSignIn}>
+            onClick={googleSignIn}>
             Sign in with Google
         </Button>
         </>

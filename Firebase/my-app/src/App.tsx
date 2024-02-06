@@ -5,6 +5,7 @@ import { AuthProvider } from './contexts/AuthContext';
 import HomePage from './pages/HomePage';
 import AdminPage from './pages/AdminPage';
 import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 const App = () => {
   const { currentUser, userRole } = useAuth(); // Adjust according to your actual auth context
@@ -14,6 +15,7 @@ const App = () => {
       <AuthProvider>
         <Routes>
           <Route path="/login" element={<LoginPage />} />
+          <Route path="/register" element={<RegisterPage />} />
           <Route
             path="/admin"
             element={
@@ -21,7 +23,7 @@ const App = () => {
             }
           />
           <Route
-            path="/"
+            path="/homepage"
             element={
               currentUser && (userRole === 'user' || userRole === 'administrator') ? <HomePage /> : <Navigate to="/login" replace />
             }

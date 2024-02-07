@@ -25,7 +25,7 @@ const RegisterPage: React.FC = () => {
         confirmPassword: ""
     })
     
-    const handleChange = (e: { target: { name: any; value: any; }; }) =>{
+    const handleChange = (e: { target: { name: any; value: any;}; }) =>{
     const {name,value} = e.target
         setUser({
         ...user, //spread operator 
@@ -60,9 +60,9 @@ const RegisterPage: React.FC = () => {
 
     return (
         <>  
-        <Heading my = {10} fontSize = "3xl" color = "teal.500">Create a new account</Heading>
+        <Heading my = {10} fontSize = "3xl" color = "red.300" textAlign={'center'}>Create a new account</Heading>
     <Container border="1px" borderColor="gray.300">
-        <Text fontSize = "xl">Sign up</Text>
+        <Text fontSize = "xl" align={'center'}>Sign up</Text>
             <Input 
                 m="5px"
                 type="text"
@@ -78,28 +78,30 @@ const RegisterPage: React.FC = () => {
                 onChange={handleChange} 
                 placeholder="Password"/>
                 <Input 
-                type="text" 
+                type="password" 
                 m="5px" 
-                name="username" 
+                name="confirmPassword" 
                 value={user.confirmPassword} 
                 onChange={handleChange}    
                 placeholder="Re-enter password"/>
             <Button
                 m="5px"
                 type = "submit" 
-                colorScheme = "teal" 
+                colorScheme = "pink" 
                 width = "full"
                 variant="solid"
                 onClick={registerAccount} >
                 Register
             </Button>
-        Already have an account ?{" "}
-        <Link to="/login"
-            style = {{
-                color:"teal"
-                }}>
-            Sign in
-        </Link>
+            <Text align={'center'}>
+            Already have an account ?{" "}
+            <Link to="/login"
+                style = {{
+                    color:"teal"
+                    }}>
+                Sign in
+            </Link>
+            </Text>
         </Container>    
         </>
         

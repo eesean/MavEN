@@ -9,7 +9,8 @@ import {
     Container,
     useToast
 } from '@chakra-ui/react';
-import { auth } from '../firebase-config';
+import { auth, firestore } from '../firebase-config';
+import { addDoc, collection } from 'firebase/firestore';
 
 //test for validity for email
 const validEmail = (email: string) => {
@@ -36,11 +37,17 @@ const RegisterPage: React.FC = () => {
     const toast = useToast();
     
 //register function 
-   const registerAccount = async (e: { preventDefault: () => void; })=> {
+   const registerAccount = async (e: any)=> {
         e.preventDefault();
         if (user.password === user.confirmPassword && validEmail(user.email)) {
             try {
-                await createUserWithEmailAndPassword(auth, user.email, user.password);
+                const result = await createUserWithEmailAndPassword(auth, user.email, user.password);
+                const registeredUser = result.user;
+                await addDoc(collection(firestore, "users"), {
+                    uid: registeredUser.uid,
+                    email: registeredUser.email,
+                    authProvider: "local",
+                })
                 navigate("/login");
             } catch {
                 alert("Sorry, something went wrong. Please try again.");

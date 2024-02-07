@@ -9,7 +9,8 @@ import {
     Text,
     Input,
 } from '@chakra-ui/react';
-import { auth, googleProvider } from '../firebase-config';
+import { auth, googleProvider, firestore } from '../firebase-config';
+import { collection, query, getDocs, addDoc, where } from 'firebase/firestore';
 
 const validEmail = (email: string) => {
     const emailReged = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
@@ -38,6 +39,14 @@ const LoginPage: React.FC = () => {
         if (validEmail(user.email)) {
             try {
                 await signInWithEmailAndPassword(auth, user.email, user.password);
+                toast({
+                    title: 'Logged in',
+                    description: "Successfully logged in!",
+                    duration: 5000,
+                    isClosable: true,
+                    status: 'success',
+                    position: 'top',
+                });
                 history("./homepage");
             } catch {
                 toast({
@@ -61,24 +70,39 @@ const LoginPage: React.FC = () => {
         }
     }
 
-    const googleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
-        .then(result => {
+    const googleSignIn = async() => {
+        try {
+            const result = await signInWithPopup(auth, googleProvider);
             const loggedInUser = result.user;
-            console.log(loggedInUser);
-        })
-        .catch(error => {
-            console.log('error', error.message)
-        })
-        toast({
-            title: 'Logged in',
-            description: "Successfully logged in!",
-            duration: 5000,
-            isClosable: true,
-            status: 'success',
-            position: 'top',
-        });
-        history('/homepage')
+            const q = query(collection(firestore, "users"), where("uid", "==", loggedInUser.uid));
+            const docs = await getDocs(q);
+            if (docs.docs.length === 0) {
+                await addDoc(collection(firestore, "users"), {
+                    uid: loggedInUser.uid,
+                    email: loggedInUser.email,
+                    authProvider: "google"
+                })
+            }
+            toast({
+                title: 'Logged in',
+                description: "Successfully logged in!",
+                duration: 5000,
+                isClosable: true,
+                status: 'success',
+                position: 'top',
+            });
+            history('/homepage');
+        } catch(error) {
+            console.log('error', "Error occurred")
+            toast({
+                title: 'Login Error',
+                description: "An error occurred, please try again",
+                duration: 5000,
+                isClosable: true,
+                status: 'error',
+                position: 'top',
+            });
+        }
     }
 
     return (

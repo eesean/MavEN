@@ -4,7 +4,7 @@
     margin: 0px 0px 10px;
     box-shadow: 0 0 20px -25px black;
     border-right: 1px solid #7B7B7B;
-    padding: 10px 0px 0px 1px;
+    padding: 1% 0px 0px 1%;
     min-width: 100px;
 }
 
@@ -42,4 +42,6 @@
     border: 0px solid black;
 }
 
-.nav-button {}
+.nav-button {
+    padding: 5px 5px 5px 15%;
+}

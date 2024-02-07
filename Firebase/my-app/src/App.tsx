@@ -23,7 +23,7 @@ const App = () => {
             }
           />
           <Route
-            path="/homepage"
+            path="/"
             element={
               currentUser && (userRole === 'user' || userRole === 'administrator') ? <HomePage /> : <Navigate to="/login" replace />
             }

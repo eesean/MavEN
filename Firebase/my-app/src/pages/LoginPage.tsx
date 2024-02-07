@@ -8,6 +8,7 @@ import {
     Container,
     Text,
     Input,
+    Center,
 } from '@chakra-ui/react';
 import { auth, googleProvider } from '../firebase-config';
 
@@ -83,7 +84,7 @@ const LoginPage: React.FC = () => {
 
     return (
         <>
-        <Heading my = {10} fontSize = "3xl" color = "teal.500">Welcome to MavEN!</Heading>
+        <Heading my = {10} fontSize = "3xl" color = "red.300">Welcome to MavEN!</Heading>
         <Container border="1px" borderColor="gray.300">
             <Text fontSize = "xl">Sign in</Text>
                 <Input 
@@ -103,7 +104,7 @@ const LoginPage: React.FC = () => {
                 <Button 
                     m="5px"
                     type = "submit" 
-                    colorScheme = "teal" 
+                    colorScheme = "pink" 
                     width = "full"
                     variant="solid"
                     onClick={loginUser}>

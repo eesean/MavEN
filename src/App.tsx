@@ -8,6 +8,7 @@ import { NavigationBar } from './components/navigation-bar/navigation-bar';
  */
 
 export default function Component() {
+  
     return (
         <div>
             <Header />
@@ -16,94 +17,7 @@ export default function Component() {
                     <NavigationBar />
                 </div>
                 <div className={App_module.content}>
-                    <div className={App_module['activity-input']}>
-                        <h2>Activity Form</h2>
-                        <form className={App_module.form}>
-                            <div className={App_module['form-row']}>
-                                <label
-                                    htmlFor="activity-name"
-                                    className={App_module['input-label']}
-                                >
-                                    Event:
-                                </label>
-                                <input
-                                    id="activity-name"
-                                    placeholder="Enter activity name"
-                                    className={App_module['input-input']}
-                                />
-                            </div>
-                            <div className={App_module['form-row']}>
-                                <label
-                                    htmlFor="organiser"
-                                    className={App_module['input-label']}
-                                >
-                                    Organiser:
-                                </label>
-                                <input
-                                    id="orgnaniser"
-                                    type="text"
-                                    className={App_module['input-input']}
-                                    placeholder="Enter organiser name"
-                                />
-                            </div>
-                            <div className={App_module['form-row']}>
-                                <label
-                                    htmlFor="activity-date"
-                                    className={App_module['input-label']}
-                                >
-                                    Date:
-                                </label>
-                                <input className={App_module['input-input']} type="date" />
-                            </div>
-                            <div className={App_module['form-row']}>
-                                <label
-                                    htmlFor="activity-time"
-                                    className={App_module['input-label']}
-                                >
-                                    Time:
-                                </label>
-                                <input
-                                    id="activity-time"
-                                    type="time"
-                                    className={App_module['input-input']}
-                                />
-                            </div>
-                            <div className={App_module['form-row']}>
-                                <label
-                                    htmlFor="activity-hours"
-                                    className={App_module['input-label']}
-                                >
-                                    Hours Spent:
-                                </label>
-                                <input
-                                    id="activity-hours"
-                                    min="0"
-                                    type="number"
-                                    className={App_module['input-input']}
-                                    placeholder="Enter number of hours"
-                                />
-                            </div>
-                        </form>
-                        <button className={App_module['add-entry-btn']}>Add Entry</button>
-                        <div>
-                            <table>
-                             <thead>
-                                    <tr>
-                                        <th>Event</th>
-                                        <th>Date</th>
-                                        <th>Time</th>
-                                        <th>Number of Hours</th>
-                                        <th>Organiser</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td colspan="5">No data available</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>

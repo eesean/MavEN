@@ -1,0 +1,33 @@
+.root {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chapter-title {
+    padding: 0px 10px;
+}
+
+.card-scroll {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px 10px;
+    text-align: start;
+    justify-content: start;
+    align-content: center;
+}
+
+.scroll-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    min-width: 1000px;
+}
+
+.more {}
+
+.more-link {
+    font-size: 15px;
+}

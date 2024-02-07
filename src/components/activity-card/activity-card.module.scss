@@ -1,0 +1,30 @@
+.root {
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+    border: 0px solid black;
+    border-radius: 45px;
+    box-shadow: 0 0 20px black;
+    text-align: start;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+    width: 300px;
+}
+
+.activity-image {
+    border-radius: 30px;
+    width: 270px;
+    text-align: start;
+    margin: 10px;
+}
+
+.activity-title {
+    text-align: center;
+}
+
+.activity-name {
+    margin: 2px;
+}
+
+.activity-name {}

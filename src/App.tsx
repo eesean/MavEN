@@ -1,6 +1,7 @@
 import App_module from './App.module.scss';
 import { Header } from './components/header/header';
 import { NavigationBar } from './components/navigation-bar/navigation-bar';
+import { EventsScroll } from './components/events-scroll/events-scroll';
 /**
  * v0 by Vercel.
  * @see https://v0.dev/t/tNSvp0OuWTO
@@ -8,17 +9,15 @@ import { NavigationBar } from './components/navigation-bar/navigation-bar';
  */
 
 export default function Component() {
-  
     return (
         <div>
+            <EventsScroll />
             <Header />
             <div className={App_module.body}>
                 <div className={App_module['nav-bar']}>
                     <NavigationBar />
                 </div>
-                <div className={App_module.content}>
-                    
-                </div>
+                <div className={App_module.content}></div>
             </div>
         </div>
     );

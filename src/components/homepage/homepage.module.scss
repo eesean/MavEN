@@ -1,11 +1,15 @@
 .root {
     display: block;
+    background-color: #D7F3FE;
+    width: 85vw;
 }
 
 .hero-banner {
     display: flex;
     padding: 0%;
-    height: 400px;
+    height: 30vw;
+    width: auto;
+    background-color: v;
 }
 
 .hero-description {
@@ -14,8 +18,8 @@
 
 .hero-image {
     overflow: hidden;
-    display: block;
-    width: 90%;
+    height: 30vw;
+    display: inline;
 }
 
 .hero-title {
@@ -37,19 +41,19 @@
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    align-content: space-evenly;
+    align-content: center;
     justify-content: center;
-    font-size: 70%;
-    background-color: #E0E1E5;
+    font-size: 5vw;
+    width: 60vw;
 }
 
 .hero-tagline {
     font-style: italic;
     text-align: center;
     font-weight: 300;
-    margin: 2px;
-    font-size: 180%;
-    width: 80%;
+    margin: 1vw;
+    color: #187DB3;
+    font-size: 2vw;
 }
 
 .hero-title {
@@ -57,11 +61,22 @@
     align-items: center;
     align-content: center;
     justify-content: center;
-    margin: 5px;
+    margin: 1vw;
+    color: #187DB3;
+    font-size: 5vw;
 }
 
 .hero-description {
-    font-size: 150%;
-    margin: 0px;
-    width: 90%;
+    font-size: 1.5vw;
+    margin: 1vw;
+    text-align: center;
+    padding: 0%;
+}
+
+.app {
+    width: 100%;
+}
+
+.image {
+    height: 30vw;
 }

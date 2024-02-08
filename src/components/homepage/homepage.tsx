@@ -13,11 +13,13 @@ export const Homepage = ({ className }: HomepageProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles['hero-banner']}>
-                <img
-                    src="../images/Volunteering.jpg"
-                    alt="Hero image"
-                    className={styles['hero-image']}
-                />
+                <div className={styles['hero-image']}>
+                    <img
+                        src="../images/Volunteering.jpg"
+                        alt="Hero image"
+                        className={styles.image}
+                    />
+                </div>
                 <div className={styles['hero-text']}>
                     <h1 className={styles['hero-title']}>MAvEN</h1>
                     <h2 className={styles['hero-tagline']}>

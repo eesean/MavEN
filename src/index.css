@@ -60,3 +60,7 @@ button:focus-visible {
 .body {
     display: flex;
 }
+
+.content {
+    width: 80vw;
+}

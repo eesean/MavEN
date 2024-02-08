@@ -12,7 +12,6 @@ export interface NavigationBarProps {
 export const NavigationBar = ({ className }: NavigationBarProps) => {
     return (
         <div className={classNames(styles.root, className)}>
-            <div />
             <div className={styles['nav-button']}>
                 <img src="../icons/house.png" alt="Home icon" className={styles['nav-icons']} />
                 <p className={styles['nav-text']}>Home</p>

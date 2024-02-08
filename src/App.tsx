@@ -11,13 +11,13 @@ import { EventsScroll } from './components/events-scroll/events-scroll';
 export default function Component() {
     return (
         <div>
-            <EventsScroll />
             <Header />
             <div className={App_module.body}>
                 <div className={App_module['nav-bar']}>
                     <NavigationBar />
                 </div>
                 <div className={App_module.content}></div>
+                <EventsScroll />
             </div>
         </div>
     );

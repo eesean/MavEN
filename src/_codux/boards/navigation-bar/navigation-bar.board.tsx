@@ -6,7 +6,9 @@ export default createBoard({
     Board: () => <NavigationBar />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 136,
-        canvasHeight: 266,
+        canvasWidth: 671,
+        canvasHeight: 630,
+        windowWidth: 814,
+        windowHeight: 538,
     },
 });

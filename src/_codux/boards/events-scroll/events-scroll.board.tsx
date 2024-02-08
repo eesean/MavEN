@@ -6,8 +6,8 @@ export default createBoard({
     Board: () => <EventsScroll />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 822,
+        canvasWidth: 1048,
         canvasHeight: 385,
-        windowWidth: 1142,
+        windowWidth: 474,
     },
 });

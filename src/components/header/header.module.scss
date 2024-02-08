@@ -1,35 +1,39 @@
 .root {
-    height: 50px;
     display: flex;
     align-items: center;
-    width: 100%;
-    padding: 5px;
+    width: 100vw;
+    padding: 0.5vw;
     gap: 0% 0px;
     justify-content: space-between;
     flex-direction: row;
     border-radius: 0px;
     box-shadow: 0 0 17px #000000;
-    min-width: 700px;
+    min-width: 1000px;
+    height: 5vw;
 }
 
 .logo-image {
-    width: 30px;
-    height: 30px;
     margin: 5px;
     direction: ltr;
     text-align: start;
+    width: 2vw;
+    height: 2vw;
 }
 
 .logo-text {
-    font-size: 1.8em;
+    font-size: 1.8vw;
+    color: #187DB3;
+    width: 6.5vw;
+    height: 2vw;
 }
 
 .avatar {
-    width: 30px;
+    width: 3vw;
     text-align: start;
     direction: ltr;
-    margin: 10px;
+    margin: 15px;
     border-radius: 0px;
+    height: 3vw;
 }
 
 .logo {

@@ -6,6 +6,7 @@ import { Homepage } from '../../components/homepage/homepage';
 import { NavigationBar } from '../../components/navigation-bar/navigation-bar';
 import Homepage_module from '../../components/homepage/homepage.module.scss';
 import { OrganisationScroll } from '../../components/organisation-scroll/organisation-scroll';
+import { Footer } from '../../components/footer/footer';
 
 export default createBoard({
     name: 'Homepage',
@@ -22,13 +23,16 @@ export default createBoard({
                     <OrganisationScroll />
                 </div>
             </div>
+            <div className={Homepage_module.footer}>
+                <Footer />
+            </div>
         </div>
     ),
     isSnippet: true,
     environmentProps: {
-        canvasHeight: 1724,
-        windowHeight: 1075,
-        canvasWidth: 1760,
-        windowWidth: 1786,
+        canvasHeight: 2566,
+        windowHeight: 2705,
+        canvasWidth: 2446,
+        windowWidth: 2134,
     },
 });

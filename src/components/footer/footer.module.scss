@@ -1,0 +1,19 @@
+.root {
+    width: 100vw;
+    height: 3vw;
+    padding: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #187DB3;
+    text-align: end;
+    direction: ltr;
+    justify-content: end;
+}
+
+.brand {
+    color: #FFFFFF;
+    font-weight: 500;
+    margin: 2vw;
+    font-size: 2vw;
+}

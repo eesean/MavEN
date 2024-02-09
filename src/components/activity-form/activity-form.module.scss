@@ -5,31 +5,34 @@
 
 .form-title {
     padding: 0vw 1vw;
+    font-size: 3vw;
 }
 
 .form-row {
-    margin: 5px;
+    margin: 1vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 5px;
-    width: 20vw;
+    width: 45vw;
 }
 
 .form-label {
-    margin: 5px;
-    font-size: 1.2vw;
+    margin: 0.5vw;
+    font-size: 2vw;
+    width: 25vw;
 }
 
 .form-input {
-    width: 140px;
-    font-size: 1.2vw;
+    width: 25vw;
+    font-size: 2vw;
 }
 
 .form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    flex-direction: column;
+    width: 40vw;
 }
 
 .submit-btn {
@@ -55,8 +58,9 @@
     }
 
     background-color:#B0F8FF;
-    font-size:1.2vw;
+    font-size:2vw;
     border:1px solid transparent;
+    margin:2vw;
 }
 
 .form-footer {
@@ -64,3 +68,10 @@
     text-align: start;
     padding-left: 20px;
 }
+
+.form-fields {
+    display: flex;
+    justify-content: center;
+}
+
+.form-fields {}

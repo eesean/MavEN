@@ -1,0 +1,43 @@
+.root {
+    width: 80vw;
+    margin: 1vw;
+}
+
+.form-title {
+    padding-right: 1vw;
+    padding-left: 1vw;
+    font-size: 3vw;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.formm-row {}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1vw;
+    width: 35vw;
+}
+
+.form-label {
+    margin: 0.5vw;
+    font-size: 2vw;
+}
+
+.form-input {
+    font-size: 2vw;
+    width: 20vw;
+}
+
+.submit-button {
+    font-size: 2vw;
+    border-radius: 2vw;
+    background-color: #B0F8FF;
+    margin: 2vw;
+}

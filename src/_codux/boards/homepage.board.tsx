@@ -1,11 +1,7 @@
 import '../../index.css';
 import { createBoard } from '@wixc3/react-board';
-import { EventsScroll } from '../../components/events-scroll/events-scroll';
 import { Header } from '../../components/header/header';
-import { Homepage } from '../../components/homepage/homepage';
-import { NavigationBar } from '../../components/navigation-bar/navigation-bar';
 import Homepage_module from '../../components/homepage/homepage.module.scss';
-import { OrganisationScroll } from '../../components/organisation-scroll/organisation-scroll';
 import { Footer } from '../../components/footer/footer';
 
 export default createBoard({
@@ -14,14 +10,6 @@ export default createBoard({
         <div className={Homepage_module.app}>
             <div className="header">
                 <Header />
-            </div>
-            <div className="body">
-                <NavigationBar />
-                <div className="content">
-                    <Homepage />
-                    <EventsScroll />
-                    <OrganisationScroll />
-                </div>
             </div>
             <div className={Homepage_module.footer}>
                 <Footer />

@@ -1,7 +1,7 @@
 .root {
-    width: 85vw;
+    width: 80vw;
     margin: 0vw;
-    padding: 2vw;
+    padding: 0vw 0vw 1vw;
 }
 
 .card-scroll {
@@ -18,7 +18,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 0.3vw;
+    padding: 1vw;
 }
 
 .more-link {

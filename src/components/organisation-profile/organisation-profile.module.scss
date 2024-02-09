@@ -1,0 +1,37 @@
+.root {}
+
+.title {
+    font-size: 5vw;
+}
+
+.profile-img {
+    width: 10vw;
+    height: 10vw;
+}
+
+.org-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.detail-line {}
+
+.detail-name {
+    margin: 2vw;
+}
+
+.detail-value {
+    width: 20vw;
+    background-color: #BEBEBE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-row {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    justify-content: space-between;
+}

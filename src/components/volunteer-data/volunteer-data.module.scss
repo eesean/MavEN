@@ -1,0 +1,54 @@
+.root {
+    margin: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.table-header {
+    height: 2.3vw;
+}
+
+.table-headers {
+    padding: 0.2vw;
+    font-size: 2vw;
+    font-weight: 500;
+}
+
+.table-header-column {
+    border: 0px solid black;
+    padding: 1vw;
+    margin: 0vw;
+    border-radius: 0.3vw 0vw 0vw;
+    width: 57vw;
+}
+
+.table {
+    border-radius: 0;
+    height: 3vw;
+    background-color: #B1B1B1;
+}
+
+.table-header {
+    background-color: #D7F3FE;
+}
+
+.cert-img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.table-body {
+    background-color: #FFFFFF;
+}
+
+.table-cell {
+    padding: 1vw;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.title {
+    font-size: 5vw;
+}

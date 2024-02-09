@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from './contexts/AuthContext'; // Assuming this hook provides user and auth status
 import { AuthProvider } from './contexts/AuthContext';
-import HomePage from './pages/HomePage';
+import { Homepage } from './homepage/homepage';
 import AdminPage from './pages/AdminPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
@@ -23,9 +23,9 @@ const App = () => {
             }
           />
           <Route
-            path="/"
+            path="/homepage"
             element={
-              currentUser && (userRole === 'user' || userRole === 'administrator') ? <HomePage /> : <Navigate to="/login" replace />
+               <Homepage />
             }
           />
         </Routes>

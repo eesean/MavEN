@@ -55,7 +55,9 @@ button:focus-visible {
 
 .page-header {}
 
-.header {}
+.header {
+    width: 100vw;
+}
 
 .body {
     display: flex;
@@ -71,4 +73,6 @@ button:focus-visible {
 
 .footer {}
 
-.content {}
+.content {
+    width: 80vw;
+}

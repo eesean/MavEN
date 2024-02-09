@@ -1,9 +1,9 @@
 import '../../index.css';
 import { createBoard } from '@wixc3/react-board';
-import { Header } from '../../components/header/header';
 import { NavigationBar } from '../../components/navigation-bar/navigation-bar';
 import { ActivityForm } from '../../components/activity-form/activity-form';
 import { Footer } from '../../components/footer/footer';
+import { Header } from '../../components/header/header';
 
 export default createBoard({
     name: 'ActivityInputPage',
@@ -26,6 +26,7 @@ export default createBoard({
     isSnippet: true,
     environmentProps: {
         canvasHeight: 163,
-        canvasWidth: 1021,
+        canvasWidth: 1179,
+        windowWidth: 896,
     },
 });

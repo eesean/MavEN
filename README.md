@@ -49,3 +49,6 @@ Boots up a local static web server that serves the files from dist at [`http://l
 1. Clone repository
 2. npm install (if required)
 3. npm run dev
+
+### Link to view activity management:
+https://github.com/lmlmeilin/react_lml

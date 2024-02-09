@@ -1,38 +1,31 @@
 import '../../index.css';
 import { createBoard } from '@wixc3/react-board';
-import { EventsScroll } from '../../components/events-scroll/events-scroll';
 import { Header } from '../../components/header/header';
-import { Homepage } from '../../components/homepage/homepage';
 import { NavigationBar } from '../../components/navigation-bar/navigation-bar';
-import Homepage_module from '../../components/homepage/homepage.module.scss';
-import { OrganisationScroll } from '../../components/organisation-scroll/organisation-scroll';
+import { ActivityForm } from '../../components/activity-form/activity-form';
 import { Footer } from '../../components/footer/footer';
 
 export default createBoard({
-    name: 'Homepage',
+    name: 'ActivityInputPage',
     Board: () => (
-        <div className={Homepage_module.app}>
+        <div>
             <div className="header">
                 <Header />
             </div>
             <div className="body">
                 <NavigationBar />
                 <div className="content">
-                    <Homepage />
-                    <EventsScroll />
-                    <OrganisationScroll />
+                    <ActivityForm />
                 </div>
             </div>
-            <div className={Homepage_module.footer}>
+            <div className="footer">
                 <Footer />
             </div>
         </div>
     ),
     isSnippet: true,
     environmentProps: {
-        canvasHeight: 2438,
-        windowHeight: 2775,
-        canvasWidth: 3236,
-        windowWidth: 3262,
+        canvasHeight: 163,
+        canvasWidth: 1021,
     },
 });

@@ -6,6 +6,7 @@ export default createBoard({
     Board: () => <ActivityForm />,
     isSnippet: true,
     environmentProps: {
-        canvasWidth: 855,
+        canvasWidth: 1075,
+        windowWidth: 1210,
     },
 });

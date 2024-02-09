@@ -18,11 +18,19 @@ export const NavigationBar = ({ className }: NavigationBarProps) => {
             </div>
             <div className={styles['nav-button']}>
                 <img src="../icons/activities.png" alt="" className={styles['nav-icons']} />
-                <p className={styles['nav-text']}>Activities</p>
+                <p className={styles['nav-text']}>Activities Management</p>
+            </div>
+            <div className={styles['nav-button']}>
+                <img src="../icons/event.png" alt="" className={styles['nav-icons']} />
+                <p className={styles['nav-text']}>Events</p>
             </div>
             <div className={styles['nav-button']}>
                 <img src="../icons/certificate.png" alt="" className={styles['nav-icons']} />
                 <p className={styles['nav-text']}>Certificate</p>
+            </div>
+            <div className={styles['nav-button']}>
+                <img src="../icons/setting.png" alt="" className={styles['nav-icons']} />
+                <p className={styles['nav-text']}>Settings</p>
             </div>
         </div>
     );

@@ -1,6 +1,10 @@
 # MavEN
 Management and Volunteer Engagement Network platform for Big at Heart, created using React, Firebase and TypeScript. The platform is aimed to match volunteers with opportunities available.
 
+# Key Features:
+1. Authentication
+2. Dashboard displaying upcoming volunteering activities
+
 <div align="center">  
     <img height="50" src="./src/assets/codux.svg">  
     <h1><img height="30" src="./src/assets/vite.svg"> Vite template for Codux</h1>

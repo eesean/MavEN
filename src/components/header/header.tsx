@@ -13,10 +13,10 @@ export const Header = ({ className }: HeaderProps) => {
     return (
         <div className={classNames(styles.root, className)}>
             <div className={styles.logo}>
-                <img src="../icons/favicon.png" alt="Logo image" className={styles['logo-image']} />
+                <img src="../../../icons/favicon.png" alt="Logo image" className={styles['logo-image']} />
                 <h1 className={styles['logo-text']}>MAvEN</h1>
             </div>
-            <img src="../icons/profile.png" alt="profile image" className={styles.avatar} />
+            <img src="../../../icons/profile.png" alt="profile image" className={styles.avatar} />
         </div>
     );
 };

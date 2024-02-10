@@ -20,15 +20,15 @@ export const ActivityCard = ({ className }: ActivityCardProps) => {
             <h4 className={styles['activity-name']}>Heading 4</h4>
             <div className={styles.details}>
                 <div className={styles['details-row']}>
-                    <img src="../icons/day.png" alt="Day icon" className={styles['event-icon']} />
+                    <img src="../../../icons/day.png" alt="Day icon" className={styles['event-icon']} />
                     <p className={styles['event-text']}>Day</p>
                 </div>
                 <div className={styles['details-row']}>
-                    <img src="../icons/time.png" alt="Day icon" className={styles['event-icon']} />
+                    <img src="../../../icons/time.png" alt="Day icon" className={styles['event-icon']} />
                     <p className={styles['event-text']}>Time</p>
                 </div>
                 <div className={styles['details-row']}>
-                    <img src="../icons/location.png" alt="Day icon" className={styles['event-icon']} />
+                    <img src="../../../icons/location.png" alt="Day icon" className={styles['event-icon']} />
                     <p className={styles['event-text']}>Location</p>
                 </div>
             </div>
